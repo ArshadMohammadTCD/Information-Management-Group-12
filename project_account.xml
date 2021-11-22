@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE accounts [
+  <!ELEMENT accounts (Account*)>
+  <!ELEMENT Account (details, userhistory)>
+  <!ELEMENT details (username, password, email, phoneno)>
+  <!ELEMENT userhistory (borrowedbooks, fininghistory, usercart)>
+  <!ELEMENT username (#PCDATA)>
+  <!ELEMENT password (#PCDATA)>
+  <!ELEMENT email (#PCDATA)>
+  <!ELEMENT phoneno (#PCDATA)>
+  <!ELEMENT borrowedbooks (#PCDATA)>
+  <!ELEMENT fininghistory (#PCDATA)>
+  <!ELEMENT usercart (carts.Cart.booksincart, carts.Cart.numberofitems)>
+]>
+
+<accounts>
+  <Account>
+    <details>
+      <username>geoff_vossmann1989</username>
+      <password>g30ff89</password>
+      <email>vossmanng@yahoo.gov</email>
+      <phoneno>0866080680</phoneno>
+    </details>
+    <userhistory>
+      <borrowedbooks>
+        [Book1, Book2, Book3]
+      </borrowedbooks>
+      <fininghistory>
+        [19.99, 10.99]
+      </fininghistory>
+      <usercart>
+        <carts.Cart.booksincart>
+          [Book1, Book2, Book3]
+        </carts.Cart.booksincart>
+        <carts.Cart.numberofitems>3</carts.Cart.numberofitems>
+      </usercart>
+    </userhistory>
+  </Account>
+</accounts>

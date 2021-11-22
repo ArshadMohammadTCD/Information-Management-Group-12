@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE publisher [
+  <!ELEMENT publisher (Publisher*)>
+  <!ELEMENT Publisher (companyname, companylocation, companygenres, publisherinlibrary)>
+  <!ELEMENT companyname (#PCDATA)>
+  <!ELEMENT companylocation (#PCDATA)>
+  <!ELEMENT companygenres (#PCDATA)>
+  <!ELEMENT publisherinlibrary (numberofbooksinstock, booksinstock)>
+  <!ELEMENT numberofbooksinstock (#PCDATA)>
+  <!ELEMENT booksinstock (#PCDATA)>
+]>
+
+<publisher>
+  <Publisher>
+    <companyname>"Markov Industries"</companyname>
+    <companylocation>"The Joly Building"</companylocation>
+    <companygenres>["Action", "SciFi", "Horror"]</companygenres>
+    <publisherinlibrary>
+      <numberofbooksinstock>3</numberofbooksinstock>
+      <booksinstock>[Book1, Book2, Book3]</booksinstock>
+    </publisherinlibrary>
+  </Publisher>
+</publisher>

@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE database [
+  <!ELEMENT database (stocknumbers, booklist, authorlist, publisherlist)>
+  <!ELEMENT stocknumbers (numberofbooks, numberofauthors, numberofpublishers)>
+  <!ELEMENT numberofbooks (#PCDATA)>
+  <!ELEMENT numberofauthors (#PCDATA)>
+  <!ELEMENT numberofpublishers (#PCDATA)>
+  <!ELEMENT booklist (#PCDATA)>
+  <!ELEMENT authorlist (#PCDATA)>
+  <!ELEMENT publisherlist (#PCDATA)>
+]>
+
+<database>
+  <stocknumbers>
+    <numberofbooks>3</numberofbooks>
+    <numberofauthors>3</numberofauthors>
+    <numberofpublishers>3</numberofpublishers>
+  </stocknumbers>
+  <booklist>
+    [Book1, Book2, Book3]
+  </booklist>
+  <authorlist>
+    [Author1, Author2, Author3]
+  </authorlist>
+  <publisherlist>
+    [Publisher1, Publisher2, Publisher3]
+  </publisherlist>
+</database>
