@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE librarybooks [
+  <!ELEMENT librarybooks (Book*)>
+  <!ELEMENT Book (bookdetails, librarydetails)>
+  <!ATTLIST Book ISBN CDATA #IMPLIED>
+  <!ELEMENT bookdetails (title, author, genre, pages, publisher*)>
+  <!ELEMENT librarydetails (bookid, section, stockprice, borrowedby?)>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT author (firstname+, lastname)>
+  <!ELEMENT firstname (#PCDATA)>
+  <!ELEMENT lastname (#PCDATA)>
+  <!ELEMENT genre (#PCDATA)>
+  <!ELEMENT pages (#PCDATA)>
+  <!ELEMENT publisher (#PCDATA)>
+  <!ELEMENT bookid (#PCDATA)>
+  <!ELEMENT section (#PCDATA)>
+  <!ELEMENT stockprice (#PCDATA)>
+  <!ELEMENT borrowedby (#PCDATA)>
+]>
+
+<librarybooks>
+  <Book ISBN="20334232">
+    <bookdetails>
+      <title>Don Bodewell's Wild Ride</title>
+      <author>
+        <firstname>Harrison</firstname>
+        <lastname>Asher-Kowalski</lastname>
+      </author>
+      <genre>Adventure</genre>
+      <pages>77</pages>
+      <publisher>Bob's Books, Beds and BBQs</publisher>
+    </bookdetails>
+    <librarydetails>
+      <bookid>DBWR-HAK-BBBB</bookid>
+      <section>Section XI</section>
+      <stockprice>19.99</stockprice>
+      <borrowedby>Anne_Buckley1</borrowedby>
+    </librarydetails>
+  </Book>
+</librarybooks>

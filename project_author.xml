@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE authors [
+  <!ELEMENT authors (Author*)>
+  <!ELEMENT Author (personalinfo, genre, booklist, serieslist)>
+  <!ELEMENT personalinfo (name, age, nationality)>
+  <!ELEMENT name (firstname, lastname)>
+  <!ELEMENT firstname (#PCDATA)>
+  <!ELEMENT lastname (#PCDATA)>
+  <!ELEMENT age (#PCDATA)>
+  <!ELEMENT nationality (#PCDATA)>
+  <!ELEMENT genre (#PCDATA)>
+  <!ELEMENT booklist (#PCDATA)>
+  <!ELEMENT serieslist (#PCDATA)>
+]>
+
+<authors>
+  <Author>
+    <personalinfo>
+      <name>
+        <firstname>Harrison</firstname>
+        <lastname>Asher-Kowalski</lastname>
+      </name>
+      <age>29</age>
+      <nationality>Belgian</nationality>
+    </personalinfo>
+    <genre>SciFi</genre>
+    <booklist>
+      Don Bodewell's Wild Ride
+    </booklist>
+    <booklist>
+      Book2
+    </booklist>
+    <booklist>
+      Book3
+    </booklist>
+    <serieslist>
+      "Series1"
+    </serieslist>
+    <serieslist>
+      "Series2"
+    </serieslist>
+    <serieslist>
+      "Series3"
+    </serieslist>
+  </Author>
+  <Author>
+    <personalinfo>
+      <name>
+        <firstname>Bo</firstname>
+        <lastname>Hemmington</lastname>
+      </name>
+      <age>35</age>
+      <nationality>Danish</nationality>
+    </personalinfo>
+    <genre>SciFi</genre>
+    <booklist>
+      Book1
+    </booklist>
+    <booklist>
+      Book2
+    </booklist>
+    <booklist>
+      Book3
+    </booklist>
+    <serieslist>
+      "Series1"
+    </serieslist>
+    <serieslist>
+      "Series2"
+    </serieslist>
+    <serieslist>
+      "Series3"
+    </serieslist>
+  </Author>
+</authors>

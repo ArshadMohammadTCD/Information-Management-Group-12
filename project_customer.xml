@@ -1,0 +1,39 @@
+<!DOCTYPE customers [
+<!ELEMENT customers (customer*)>
+<!ELEMENT customer (Account.username, Account.password, Account.email, Account.borrowedBooks, Account.finingHistory, Account.userCart, accountAge)>
+
+<!ATTLIST customer customerId ID #REQUIRED>
+<!ELEMENT account.username (#PCDATA)>
+<!ELEMENT account.password (#PCDATA)>
+<!ELEMENT account.email (#PCDATA)>
+<!ELEMENT account.borrowedBooks (#PCDATA)>
+<!ELEMENT account.finingHistory (#PCDATA)>
+<!ELEMENT account.userCart (#PCDATA)>
+<!ELEMENT account.userCart (#PCDATA)>
+<!ELEMENT accountAge (#PCDATA)>
+]>
+
+<customers>
+    <Customer name="Anne Buckley">
+        <Account.username> Anne_Buckley1 </Account.username>
+        <Account.password> Password </Account.password>
+        <Account.email>
+    anne.buckley@gmail.com
+    </Account.email>
+         <Account.borrowedBooks> 
+         20334232
+      </Account.borrowedBooks>
+        <Account.borrowedBooks> 
+    99123 
+    </Account.borrowedBooks>
+        <Account.borrowedBooks> 
+    89087
+    </Account.borrowedBooks>
+        <Account.finingHistory></Account.finingHistory>
+        <Account.userCart> 99123 </Account.userCart>
+        <Account.userCart> 89087 </Account.userCart>
+        <Account.userCart> 12546 </Account.userCart>
+
+        <accountAge> 10 years </accountAge>
+    </Customer>
+</customers>

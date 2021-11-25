@@ -1,0 +1,19 @@
+<!DOCTYPE fines [
+<!ELEMENT fines (fine*)>
+<!ELEMENT fine (amount, dueBy, paid, paidOn)>
+<!ATTLIST fine fineId ID #REQUIRED>
+<!ELEMENT amount (#PCDATA)>
+<!ELEMENT dueBy (#PCDATA)>
+<!ELEMENT paid (#PCDATA)>
+<!ELEMENT paidOn (#PCDATA)>
+<!ELEMENT paidOn (#PCDATA)>
+]>
+
+<fines>
+    <Fine owner="Anne Buckley">
+        <amount>162.99</amount>
+        <dueBy>2002-09-24</dueBy>
+        <paid>false</paid>
+        <paidOn>2002-09-22</paidOn>
+    </Fine>
+</fines>
